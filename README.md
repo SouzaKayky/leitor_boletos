@@ -117,4 +117,3 @@ Dessa forma, ao invés do programador precisar ler e identificar os padrões man
 
 ---
 
-> Desenvolvido por Areal Fox — 2025
