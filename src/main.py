@@ -5,7 +5,7 @@ from pathlib import Path
 from utils.construtor_extracao import extrair_dados
 
 if __name__ == "__main__":
-    pasta_data = Path("C:/Users/user/OneDrive/controle_administrativo_fox/financeiro/leitor_pdf_financeiro/data")
+    pasta_data = Path("data")
     pdfs = list(pasta_data.rglob("*.pdf"))
 
     todos_dados = []
