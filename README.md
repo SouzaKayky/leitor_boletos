@@ -90,6 +90,23 @@ Com base no CNPJ de sua empresa, o sistema classifica:
 
 ---
 
+## 📄 Exemplo Fictício do Arquivo CSV Gerado
+
+O arquivo CSV gerado pelo projeto possui colunas essenciais para controle e análise dos boletos lidos. Abaixo, um exemplo fictício do conteúdo desse CSV:
+
+
+| index | arquivo            | erro                 | instituicao     | vencimento | data_documento | data_processamento | numero_documento | nosso_numero | valor_documento | beneficiario          | cnpj_beneficiario      | pagador        | cnpj_pagador         | linha_digitavel                                   | tipo_operacao            |
+|-------|--------------------|----------------------|-----------------|------------|---------------|--------------------|-----------------|--------------|----------------|-----------------------|-----------------------|----------------|----------------------|--------------------------------------------------|-------------------------|
+| 0     | boleto_abc_01.pdf   |                      | Banco do Brasil | 15/07/2025 | 01/07/2025    | 02/07/2025         | 123456789       | 25/123456-7  | 1.250,75       | Empresa XYZ Ltda      | 12.345.678/0001-90    | Cliente Alpha  | 98.765.432/0001-12   | 00190.00009 12345.678901 23456.789012 7 98760000012507 | cobrança                |
+| 1     | boleto_xyz_02.pdf   |                      | Bradesco        | 10/08/2025 | 05/08/2025    | 06/08/2025         | 987654321       | 25/987654-3  | 3.450,00       | Serviços Beta SA      | 11.222.333/0001-44    | Cliente Beta  | 77.888.999/0001-55   | 23790.12345 67890.123456 78901.234567 8 76540000034500 | pagamento de serviço/produto |
+| 2     | boleto_itau_03.pdf  | layout não reconhecido|                 |            |               |                    |                 |              |                |                       |                       |                |                      |                                                  |                         |
+| 3     | boleto_sicredi_04.pdf|                      | Sicredi        | 20/07/2025 | 15/07/2025    | 15/07/2025         | 456789123       | 25/456789-1  | 980,50         | Industria Gama ME     | 22.111.444/0001-77    | Cliente Gama  | 66.555.444/0001-22   | 74891.12345 00456.007890 12345.678901 9 12340000009805 | pagamento de serviço/produto |
+| 4     | boleto_bb_05.pdf    |                      | Banco do Brasil | 30/07/2025 | 25/07/2025    | 25/07/2025         | 321654987       | 25/321654-9  | 2.100,00       | Comercial Delta Ltda  | 55.666.777/0001-88    | Cliente Delta | 33.222.111/0001-99   | 00190.00012 65432.109876 54321.098765 4 21000000021000 | cobrança                |
+
+
+
+---
+
 ## 🛠️ Outras Funcionalidades
 
 - Importação dinâmica de modelos de layout
