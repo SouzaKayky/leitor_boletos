@@ -18,8 +18,6 @@ if __name__ == "__main__":
             todos_dados.append(dados_extraidos)
         except Exception as e:
             print(f"\nX - Erro ao processar {caminho_pdf.name}: {e}\n")
-            
-    
 
     if todos_dados:
         df = pd.DataFrame(todos_dados)

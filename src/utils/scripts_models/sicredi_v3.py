@@ -2,23 +2,7 @@ from utils.regex import buscar_regex
 from utils.normalizar_cnpj import normalizar_cnpj_areal
 import re 
 
-def extrair_boleto_sicredi_v3(texto, nome_arquivo=""):
-    dados = {
-        "arquivo": nome_arquivo,
-        "instituicao": "Sicredi",
-        "vencimento": "",
-        "data_documento": "",
-        "data_processamento": "",
-        "numero_documento": "",
-        "nosso_numero": "",
-        "valor_documento": "",
-        "beneficiario": "",
-        "cnpj_beneficiario": "",
-        "pagador": "",
-        "cnpj_pagador": "",
-        "linha_digitavel": "",
-        "tipo_operacao": ""
-    }
+def extrair_boleto_sicredi_v3(texto, dados):
 
     linhas = texto.splitlines()
     total_linhas = len(linhas)
